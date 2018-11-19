@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "207d01c9-9db9-4ecf-8410-16f9364c67d0",
+		"name": "spring2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar-categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/Categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear-categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":8,\n\"nombre\":Alimentacion,\n}"
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar-categoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":2,\n\"nombre\" : \"Limpieza\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/Categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar-categoria-byId",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":2,\n\"nombre\" : \"Limpieza\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/Categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar-productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear-productos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/Productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificar-productos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":1,\n\"nombre\" : \"sardinas\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/Productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar-productos-byId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/Productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Productos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "043929cd-18ff-4832-ab06-366737f25d34",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b452e1ea-fcd2-4588-9507-413fb7f9030c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
